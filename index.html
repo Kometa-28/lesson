@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Transition box</title>
+        <meta name="description" content="Огляд ноутбуків, порівняння цін, відгуки.">
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            .box {
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+                /* position: absolute; */
+                
+                /* animation: move 3s infinite alternate-reverse; */
+                transition: all 1s ease-out 1s;
+            }
+
+            /* @keyframes move {
+                from {
+                    left: 0;
+                    top: 0;                    
+                }
+                to {
+                    left: 300px;
+                    top: 300px;
+                }
+            } */
+
+            .box:hover {
+                width: 150px;
+                height: 150px;
+                background-color: orange;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box"></div>
+    </body>
+</html>
